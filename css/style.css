@@ -2480,6 +2480,10 @@ background: #FFECA9;
   .menu__list li+li {
     margin-top: 25px;
   }
+  .header__nav-item a {
+    width: 100%;
+    display: block;
+  }
   .header__nav-item {
     margin-top: 200px;
   }
