@@ -2478,7 +2478,7 @@ background: #FFECA9;
     font-weight: 600;
   }
   .menu__list li+li {
-    margin-top: 32px;
+    margin-top: 25px;
   }
   .header__nav-item {
     margin-top: 200px;
