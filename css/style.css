@@ -447,6 +447,9 @@ h6 {
   line-height: 1.375rem;
   border: 1px solid #000;
 }
+.avto.header__nav-item  {
+  border-left: none;
+}
 .header__nav-item:first-child {
   background-color: #FFECA9;
   transition: all ease-in-out 0.2s;
@@ -2728,7 +2731,14 @@ background: #FFECA9;
   .header__logo-img a img {
     margin-left: 24px;
   }
-
+  .item-list-btn.item-list {
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .partners__list-btn {
+    font-size: 16px;
+  }
   .footer__content {
     display: block;
     margin-bottom: 44px;
