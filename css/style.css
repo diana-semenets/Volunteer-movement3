@@ -1988,8 +1988,8 @@ background: #FFECA9;
   border: 1px solid #000000;
   background-color: #fff;
 }
-.partner__btn:hover {
-  color: #4A4A4A;
+.partner__btn:hover, .vacancy__btn:hover, .help__btn:hover {
+  background: #EEE; 
 }
 
 .partner__content {
