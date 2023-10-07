@@ -37,7 +37,6 @@
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -73,7 +72,7 @@
 
 ._icon-copy:before {
   content: "\e904";
-  color: #B0B0B0;
+/*  color: #B0B0B0; */
 }
 
 ._icon-chevron-down:before {
@@ -384,7 +383,7 @@ h6 {
   top: 0;
   width: 100%;
   background-color: #F6F6FC;
-  opacity: 0.9;
+  opacity: 0.95;
 
 }
 .sticky .header__box {
@@ -415,6 +414,7 @@ h6 {
 
 .header__btns {
   margin-left: 55px;
+  margin-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,6 +555,9 @@ background-color: #EEE;
   justify-self: end;
   gap: 69px;
 }
+.footer__list-item a:hover {
+  color: #3C59F0;
+}
 .footer__contacts {
   max-width: 936px;
   margin-left: 110px;
@@ -583,7 +586,8 @@ background-color: #EEE;
 
 .footer__list-info {
   margin-bottom: 10px;
-  color: #4A4A4A;
+ font-weight: 400;
+ font-size: 18px;
 }
 
 .footer__btns {
@@ -627,14 +631,10 @@ background-color: #EEE;
 } 
 /*--------------------------------*/
 
-.main {
- 
-}
-
 .main__box {
   max-width: 1440px;
   margin: 0 auto;
-  padding-bottom: 206px;
+  padding-bottom: 160px;
   
 }
 .header-info-contacts {
@@ -708,11 +708,12 @@ background-color: #EEE;
 
 .main__info-text {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 37px;
 }
 
 .main__info-btn {
+  max-width: 523px;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -911,7 +912,7 @@ background-color: #EEE;
   font-size: 24px;
   line-height: 29px;
   display: flex;
-  justify-content: space-between;
+  align-items: end;
 }
 .partners__list-btn a {
   height: 100%;
@@ -938,6 +939,9 @@ background-color: #EEE;
   align-content: end;
   background-color: #fff;
   transition: all ease-in-out 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .item-list:hover {
@@ -948,6 +952,9 @@ background-color: #EEE;
 }
 .item-list-btn.item-list:hover {
   background-color: #EEE; 
+}
+.item-list:hover .item-list-title {
+  color: #3C59F0;
 }
 .item-list-title {
   margin-top: 8px;
@@ -1540,6 +1547,11 @@ background-color: #EEE;
 ._icon-copy {
   margin-left: 40px;
   cursor: pointer;
+  color: #B0B0B0;
+}
+._icon-copy:hover {
+ 
+  color: #3C59F0;
 }
 
 /*-------------------------*/
@@ -1972,6 +1984,9 @@ background: #FFECA9;
   margin-bottom: 63px;
   border: 1px solid #000000;
   background-color: #fff;
+}
+.partner__btn:hover {
+  color: #4A4A4A;
 }
 
 .partner__content {
