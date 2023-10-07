@@ -7,7 +7,7 @@ let endX;
 
 	sliderLeftBtn.addEventListener('click', function() {            
 		left = left - 400;
-		  if (left < -2000) {
+		  if (left < -1700) {
 			left = 0;
 		  }
 			slider.style.left = left + 'px';            
