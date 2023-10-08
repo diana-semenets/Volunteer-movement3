@@ -1484,15 +1484,16 @@
     function checkActiveLangButton() {
       switch (currentLang) {
         case "ukr":
-          document
-            .querySelector('[data-btn="ukr"]')
-            .classList.add("header__btn_active");
+            document.querySelectorAll('[data-btn="ukr"]').forEach((item) => {
+              item.classList.add("header__btns-btn--active");
+            });
           break;
   
         case "en":
-          document
-            .querySelector('[data-btn="en"]')
-            .classList.add("header__btn_active");
+          document.querySelectorAll('[data-btn="en"]').forEach((item) => {
+            item.classList.add("header__btns-btn--active");
+          });
+         
           break;
   
         default:
@@ -1510,6 +1511,9 @@
     }
     console.log("navigator.language", checkBrowserLang());
   
+
+    
+   
     /*-----------copy-------------------*/
   
     function copy() {
