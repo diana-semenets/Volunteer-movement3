@@ -383,7 +383,6 @@ h6 {
   top: 0;
   width: 100%;
   background-color: #F6F6FC;
-  opacity: 0.95;
 
 }
 .sticky .header__box {
@@ -465,6 +464,9 @@ h6 {
 .header__btns-btn--active {
   color: #fff;
   background-color: #212121;
+}
+.header__nav-icon._icon-arrowicon {
+  display: none;
 }
 .menu__list {
   display: none;
@@ -562,7 +564,7 @@ background-color: #EEE;
   color: #3C59F0;
 }
 .footer__contacts {
-  max-width: 936px;
+  max-width: 990px;
   margin-left: 110px;
   display: flex;
   justify-content: space-between;
@@ -865,8 +867,7 @@ background-color: #EEE;
 
 .partners__box {
   max-width: 1440px;
-  margin: 0 auto;
- 
+  margin: 0 auto; 
   padding-top: 83px;
 }
 
@@ -921,7 +922,6 @@ background-color: #EEE;
   height: 100%;
 }
 
-
 .item-list {
   max-width: 636px;
   font-weight: 400;
@@ -938,7 +938,7 @@ background-color: #EEE;
   transition: all ease-in 0.3s;
 }
 .item-list-btn.item-list {
-  padding-right: 40px;
+  padding: 40px;
   align-content: end;
   background-color: #fff;
   transition: all ease-in-out 0.2s;
@@ -1140,14 +1140,6 @@ background-color: #EEE;
     padding-bottom: calc(4rem + 6.25 * (100vw - 20rem) / 55);
   }
 }
-
-/*@supports ((-moz-column-gap: clamp( 1.25rem , -1.3409090909rem  +  12.9545454545vw , 8.375rem )) or (column-gap: clamp( 1.25rem , -1.3409090909rem  +  12.9545454545vw , 8.375rem ))) {
-  .why__box {
-    -webkit-column-gap: clamp( 1.25rem , -1.3409090909rem  +  12.9545454545vw , 8.375rem );
-       -moz-column-gap: clamp( 1.25rem , -1.3409090909rem  +  12.9545454545vw , 8.375rem );
-            column-gap: clamp( 1.25rem , -1.3409090909rem  +  12.9545454545vw , 8.375rem );
-  }
-} */
 
 @supports not ((-moz-column-gap: clamp( 1.25rem , -1.3409090909rem  +  12.9545454545vw , 8.375rem )) or (column-gap: clamp( 1.25rem , -1.3409090909rem  +  12.9545454545vw , 8.375rem ))) {
   .why__box {
@@ -2385,7 +2377,20 @@ background: #FFECA9;
     display: -ms-flexbox;
     display: flex;    
   }
-
+  .header__nav-icon._icon-arrowicon {
+    display: block;
+  }
+  .header__nav-icon._icon-arrowicon::before {
+    content: "\e900";
+    font-size: 16px;
+    font-weight: 600;
+    pointer-events: none;
+  }
+  .header__nav-item:first-child {
+    display: flex;
+    align-items: center;
+  }
+  
   .header__nav li {
     display: block;
   }
@@ -2437,8 +2442,7 @@ background: #FFECA9;
     width: 94px;
   }
   .menu {
-    position: fixed;
-    
+    position: fixed;    
     top: 105px;
     left: 0;
     width: 100%;
@@ -2529,7 +2533,7 @@ background: #FFECA9;
   }
   .main__box {
     margin-top: 48px;
-    padding-bottom: 100px;
+    padding-bottom: 64px;
   }
   .page-error {
     padding-left: 15px;
@@ -2554,6 +2558,8 @@ background: #FFECA9;
 
   .info__box {
     width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
     gap: 15px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2823,17 +2829,23 @@ background: #FFECA9;
   .info__about-btn {
     margin-top: 32px;
   }
-
+  .partners__box {
+    padding-top: 64px;
+  }
   .partners__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding-bottom: 64px;
   }
-
+  .partners__list {
+    margin-top: 48px;
+  }
   .car__content {
     max-width: 430px;
   }
-
+  .car__title {
+    margin: 0;
+  }
   .why__box {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2872,6 +2884,7 @@ background: #FFECA9;
 
   .join__box {
     margin-top: -300px;
+    padding-bottom:64px;
   }
   .item-list {
     height: 181px;
@@ -2882,9 +2895,17 @@ background: #FFECA9;
   .join__title {
     margin-top: 64px;
   }
+  .progress__box {
+    padding-top: 64px;
+    padding-bottom: 88px;
+  }
+  .progress__wrapper {
+    margin-top: 32px;
+  }
   .partners__list-btn {
     height: 56px;
     padding: 16px 0; 
+    align-items: center;
   }
   .partners__list-btn a {
     font-size: 16px;
@@ -2907,7 +2928,9 @@ background: #FFECA9;
     height: 364px;
     width: 100%;
   }
-
+  .item-list-btn.item-list {
+    padding: 16px 24px;
+  }
   .progress__slide {
     height: 100%;
   }
@@ -2917,6 +2940,7 @@ background: #FFECA9;
     background-color: #F6F6FC;
   }
   .donat__box {
+    padding-top: 64px;
     padding-bottom: 0;
   }
   .donat__content {
@@ -2978,10 +3002,13 @@ background: #FFECA9;
     line-height: 28px;
   }
   .contact-form {
+    padding-top: 64px;
     padding-left: 0;
     padding-right: 0;
   }
-
+  .contact-form__content {
+    margin-top: 36px;
+  }
   .contact-form__box {
     padding-left: 24px;
     padding-right: 24px;
