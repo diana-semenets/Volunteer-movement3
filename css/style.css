@@ -120,7 +120,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #F6F6FC;
+  background: #F6F6F6;
 }
 
 input,
@@ -1632,7 +1632,10 @@ background: #FFECA9;
 .input.error {
   border: 2px solid red;
 }
-
+.contact-item__label {
+  font-size: 20px;
+  font-weight: 600;
+}
 .modal, .modalsocial {
   position: fixed;
   top: 0;
@@ -2910,6 +2913,20 @@ background: #FFECA9;
   .partners__list-btn a {
     font-size: 16px;
   }
+  .tab__card-btn a::before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/card-img.webp');
+    background-size: cover;
+    top: 4px;
+    left: 0;
+    width: 25px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+  .tab__card-btn a {
+    padding-left: 40px;
+  }
   .item-list-btn.partners__list-item {
     height: 56px;
     align-content: center;
@@ -2974,12 +2991,14 @@ background: #FFECA9;
     margin-top: 0;
     margin-bottom: 0;
   }
-  
+  .donat {
+    padding-bottom: 64px;
+  }
   .donat__btns {
     flex-wrap: wrap-reverse;
   }
   .tab__card {
-    padding: 28px 10px;
+    padding: 28px 16px;
   }
   .tab__card:not(:last-child) {
     margin-top: 40px;
@@ -3023,6 +3042,7 @@ background: #FFECA9;
   }
   .contact-item__input {
     padding: 12px 20px;
+    border-radius: 0;
   }
 
   .contact-form__btn {
@@ -3164,6 +3184,9 @@ background: #FFECA9;
     height: 56px;
     padding: 18px;
     font-size: 16px; 
+  }
+  .modal__btn {
+    padding: 20px 40px;
   }
 }
 
