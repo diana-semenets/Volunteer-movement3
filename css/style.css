@@ -167,11 +167,11 @@ h6 {
   font-size: inherit;
 }
 
-.lock body {
+/*.lock body {
   overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
-}
+} */
 
 .tab__card-mail input, .footer__form-input input{
   outline: none;
